@@ -1,0 +1,8 @@
+## 🧠 **Curiosidade**
+
+- `pwd` significa **print working directory**.
+- Antigamente, “print” significava literalmente **enviar para a impressora física** — hoje significa apenas **mostrar na tela**.
+
+sysadmin@localhost:~$ pwd
+/home/sysadmin
+
