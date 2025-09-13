@@ -1,0 +1,128 @@
+# 🖥️ Guia Prático de Comandos Linux (CLI)
+
+Este repositório contém resumos e exemplos práticos dos principais comandos de **linha de comando (CLI)** no Linux. Ele serve como guia rápido para estudo e consulta, ideal para iniciantes e para quem quer consolidar conhecimentos de navegação no terminal.
+
+---
+
+## 📍 Comando `pwd` – Diretório Atual
+
+📖 **Função:**  
+Mostra o diretório de trabalho atual (onde você está no sistema de arquivos).
+
+**Sintaxe:**
+```bash
+pwd [OPÇÕES]
+Exemplo:
+
+sysadmin@localhost:~$ pwd
+/home/sysadmin
+
+💡 Dicas:
+
+~ = diretório home do usuário (/home/sysadmin)
+
+pwd sempre mostra o caminho absoluto.
+
+📂 Comando cd – Alterar Diretórios
+📖 Função:
+Mudar de diretório no sistema de arquivos.
+
+Sintaxe:
+
+cd [OPÇÕES] [CAMINHO]
+Tipos de Caminho
+Tipo	Exemplo	Explicação
+Absoluto	/home/sysadmin/Documents	Caminho completo desde a raiz /
+Relativo	Documents/School	Caminho a partir do diretório atual
+
+Atalhos Importantes
+Atalho	Função
+..	Sobe um nível (diretório pai)
+.	Diretório atual
+~	Diretório home do usuário
+-	Volta para o diretório anterior
+
+Exemplos
+bash
+
+# Ir para Documents (relativo)
+cd Documents
+
+# Ir para raiz do sistema (absoluto)
+cd /
+
+# Ir para home
+cd ~
+
+# Subir um nível
+cd ..
+
+# Caminho relativo de vários níveis
+cd School/Art
+
+# Voltar para o diretório anterior
+cd -
+✅ Use pwd para confirmar:
+
+bash
+pwd
+/home/sysadmin/Documents/School/Art
+📄 Comando ls – Listar Arquivos e Diretórios
+📖 Função:
+Lista o conteúdo de um diretório.
+
+Sintaxe:
+
+bash
+ls [OPÇÕES] [ARGUMENTOS]
+Argumentos
+Especificam sobre qual diretório ou arquivo o comando vai agir.
+
+bash
+ls Documents
+Opções Comuns
+Opção	Função
+-l	Listagem longa (mais detalhes)
+-r	Ordem inversa
+-a	Mostrar arquivos ocultos
+
+Exemplos
+bash
+
+# Listagem longa
+ls -l
+
+# Listagem inversa
+ls -r
+
+# Combinar opções
+ls -lr
+ls -rl
+Exemplo divertido com aptitude
+bash
+aptitude moo
+# There are no Easter Eggs in this program.
+
+aptitude -v moo
+# There really are no Easter Eggs in this program.
+
+aptitude -vv moo
+# Didn't I already tell you that there are no Easter Eggs in this program?
+
+aptitude -vvv moo
+# Stop it!
+💡 Várias opções podem ser combinadas (-v -v ou -vv) para alterar o comportamento do comando.
+
+🔑 Dicas Gerais
+Comandos são sensíveis a maiúsculas/minúsculas (ls ≠ LS)
+
+Combine opções e argumentos para ter mais controle
+
+Use man comando ou comando --help para ver todas as opções disponíveis
+
+pwd + cd + ls são a base para navegar e explorar o sistema Linux
+
+Esse guia pode ser expandido com outros comandos úteis como mkdir, rm, cp e mv.
+
+
+---
